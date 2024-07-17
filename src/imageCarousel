@@ -1,0 +1,66 @@
+// ImageCarousel.js
+import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
+
+const images = [
+    'https://via.placeholder.com/600x400?text=Image+1',
+    'https://via.placeholder.com/600x400?text=Image+2',
+    'https://via.placeholder.com/600x400?text=Image+3',
+];
+
+const ImageCarousel = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const goToPrevious = () => {
+        const isFirstSlide = currentIndex === 0;
+        const newIndex = isFirstSlide ? images.length - 1 : currentIndex - 1;
+        setCurrentIndex(newIndex);
+    };
+
+    const goToNext = () => {
+        const isLastSlide = currentIndex === images.length - 1;
+        const newIndex = isLastSlide ? 0 : currentIndex + 1;
+        setCurrentIndex(newIndex);
+    };
+
+    const goToSlide = (index) => {
+        setCurrentIndex(index);
+    };
+
+    return (
+        <div className="container mt-5">
+            <div className="carousel slide">
+                <div className="carousel-inner">
+                    {images.map((image, index) => (
+                        <div
+                            key={index}
+                            className={`carousel-item ${index === currentIndex ? 'active' : ''}`}
+                        >
+                            <img src={image} className="d-block w-100" alt={`Slide ${index + 1}`} />
+                        </div>
+                    ))}
+                </div>
+                <button className="carousel-control-prev" type="button" onClick={goToPrevious}>
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Previous</span>
+                </button>
+                <button className="carousel-control-next" type="button" onClick={goToNext}>
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Next</span>
+                </button>
+                <div className="carousel-indicators">
+                    {images.map((_, index) => (
+                        <button
+                            key={index}
+                            type="button"
+                            className={index === currentIndex ? 'active' : ''}
+                            onClick={() => goToSlide(index)}
+                        ></button>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default ImageCarousel;
