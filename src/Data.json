@@ -1,0 +1,37 @@
+[
+    {
+        "id":12,
+        "fname":"Hardik",
+        "lname":"Pandya",
+        "age":29,
+        "pic":"https://images.deccanherald.com/deccanherald/2024-07/92fb350b-fd41-492b-90c0-bc2a8bc7b5e0/file7w5k9a2r0c11ihwl6k4c.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true"
+    },
+    {
+        "id":13,
+        "fname":"Rohith",
+        "lname":"Sharma",
+        "age":37,
+        "pic":"https://media.assettype.com/nationalherald%2F2023-10%2Ff5831f0f-cc57-425e-b5d5-f9cfbe4a98a2%2F1735399089.?rect=0%2C0%2C3847%2C2164&auto=format%2Ccompress&fmt=webp&w=768&dpr=1.3"
+    },
+    {
+        "id":14,
+        "fname":"Virat",
+        "lname":"Kohli",
+        "age":36,
+        "pic":"https://akm-img-a-in.tosshub.com/indiatoday/images/story/202209/AP22251558283462_4_1200x768.jpeg?VersionId=.WufB74qG5JAiup3bYsArPQOtrtGpMm9"
+    },
+    {
+        "id":15,
+        "fname":"Jasprit",
+        "lname":"Bumrah",
+        "age":28,
+        "pic":"https://akm-img-a-in.tosshub.com/indiatoday/images/story/202407/indias-jasprit-bumrah-245834700-16x9.jpg?VersionId=cRx75zIxZ_i3XOXcxpFvEH8wsf_GAF5A&size=690:388"
+    },
+    {
+        "id":16,
+        "fname":"Axar",
+        "lname":"Patel",
+        "age":30,
+        "pic":"https://images.indianexpress.com/2024/06/Axar-Patel-2.jpg"
+    }
+]
