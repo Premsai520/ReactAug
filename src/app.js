@@ -1,16 +1,11 @@
-// App.js
-import React from 'react';
-import RegistrationForm from './rejistration.js';
+import React from "react";
+function App() {
+  return (
+    <>
+      <h1>Deploying React Project in  github</h1>
+      
+    </>
+  );
+}
 
-import ImageCarousel from './imageCarousel.js';
-import 'bootstrap/dist/css/bootstrap.css';
-
-const app = () => {
-    return (
-        <div className="App">
-            <RegistrationForm />
-        </div>
-    );
-};
-
-export default app;
+export default App;
